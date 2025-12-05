@@ -1,0 +1,28 @@
+<div class="container my-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">📚 Book Library</h2>
+    <button class="btn btn-outline-primary btn-lg shadow" (click)="addBook()">Add New Book</button>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-6" *ngFor="let book of books">
+      <div class="card book-card shadow-sm border-start border-4 border-dark rounded-4">
+
+        <div class="card-body">
+          <h4 class="card-title fw-bold">{{ book.title }}</h4>
+          <p class="text-muted mb-2">by {{ book.author }}</p>
+
+          <button class="btn btn-outline-primary rounded-pill px-4 me-2"
+            (click)="handleViewBook(book.id)">ViewDetails</button>
+
+          <button class="btn btn-outline-warning rounded-pill px-4 me-2" (click)="editBook(book.id)">Edit</button>
+
+          <button class="btn btn-outline-danger rounded-pill px-4" (click)="deleteBook(book.id)">Delete</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

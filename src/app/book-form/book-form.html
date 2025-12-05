@@ -1,0 +1,39 @@
+<div class="container my-5">
+  <div class="card p-5 border border-2 border-primary-subtle shadow-sm" style="border-radius: 18px;">
+
+    <h2 class="fw-bold mb-4 text-primary">{{ isEdit ? '✏️ Edit Book' : '➕ Add New Book' }}</h2>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Book id</label>
+      <input type="text" class="form-control form-control-lg rounded-pill" [(ngModel)]="id">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Book Title</label>
+      <input type="text" class="form-control form-control-lg rounded-pill" [(ngModel)]="title">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Author</label>
+      <input type="text" class="form-control form-control-lg rounded-pill" [(ngModel)]="author">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Published Date</label>
+      <input type="date" class="form-control form-control-lg rounded-pill" [(ngModel)]="publishedDate">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Price (₹)</label>
+      <input type="number" class="form-control form-control-lg rounded-pill" [(ngModel)]="price">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-semibold">Description</label>
+      <textarea class="form-control form-control-lg rounded" rows="4" [(ngModel)]="description"></textarea>
+    </div>
+    <button class="btn btn-primary btn-lg rounded-pill px-5 shadow" (click)="saveBook()">Save Book</button>
+
+    <button class="btn btn-outline-primary btn-lg rounded-pill px-5 mt-3" routerLink="/">⬅ Back to Book Library</button>
+  </div>
+</div>

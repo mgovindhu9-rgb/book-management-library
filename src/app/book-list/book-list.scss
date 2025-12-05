@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+}
+
+.row {
+  position: relative;
+}
+
+.col-md-6 {
+  position: relative;
+}
+
+.book-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 14px;
+  will-change: transform;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+}

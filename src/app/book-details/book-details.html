@@ -1,0 +1,13 @@
+<div class="container my-5">
+  <div class="card p-4 border border-2 border-primary-subtle shadow-sm rounded-4">
+
+    <h2 class="fw-bold mb-3 text-primary">{{ book.title }}</h2>
+
+    <p class="fs-5"><strong>Author:</strong> {{ book.author }}</p>
+    <p class="fs-5"><strong>Published:</strong> {{ book.publishedDate | date:'fullDate' }}</p>
+    <p class="fs-5"><strong>Price:</strong> ₹{{ book.price }}</p>
+    <p class="fs-5"><strong>Description:</strong><br>{{ book.description }}</p>
+
+    <button class="btn btn-primary rounded-pill px-4 mt-3" routerLink="/">⬅ Back to List</button>
+  </div>
+</div>

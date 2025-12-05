@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert T. Kiyosaki",
+      "publishedDate": "1997-04-01",
+      "price": 349,
+      "description": "A bestselling personal finance classic that teaches how to build wealth through assets, financial literacy, and smart investing."
+    },
+    {
+      "id": "2",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "publishedDate": "2018-10-16",
+      "price": 420,
+      "description": "A powerful guide on how tiny, consistent habits can create remarkable long-term results."
+    },
+    {
+      "id": "3",
+      "title": "The Alchemist",
+      "author": "Paulo Coelh",
+      "publishedDate": "1988-06-07",
+      "price": 299,
+      "description": "A philosophical novel following Santiago on a journey of self-discovery, destiny, and purpose."
+    },
+    {
+      "id": "4",
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "publishedDate": "1937-03-01",
+      "price": 250,
+      "description": "A foundational book on the psychology of success, wealth creation, and personal achievement."
+    },
+    {
+      "id": "5",
+      "title": "The Power of Your Subconscious Mind",
+      "author": "Joseph Murphy",
+      "publishedDate": "1963-01-01",
+      "price": 280,
+      "description": "A classic guide that explains how to use the subconscious mind to improve life, health, and success."
+    },
+    {
+      "id": "7",
+      "title": "The 7 Habits of Highly Effective People",
+      "author": "Stephen R. Covey",
+      "publishedDate": "1989-08-15",
+      "price": 450,
+      "description": "A timeless guide offering principles for personal and professional effectiveness."
+    },
+    {
+      "id": "8",
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "publishedDate": "1936-10-01",
+      "price": 260,
+      "description": "A classic self-help book teaching communication, persuasion, and relationship-building skills."
+    },
+    {
+      "id": "9",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "publishedDate": "2020-09-08",
+      "price": 380,
+      "description": "A book explaining how emotions, behavior, and mindset influence financial success more than logic."
+    },
+    {
+      "id": "0",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "publishedDate": "2025-06-04",
+      "price": 399,
+      "description": "Explains the two systems of thinking and how they shape our decisions."
+    },
+    {
+      "id": "0",
+      "title": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "publishedDate": "1974-07-19",
+      "price": 299,
+      "description": "Shows how habits work and how they can be transformed for success."
+    }
+  ]
+}
