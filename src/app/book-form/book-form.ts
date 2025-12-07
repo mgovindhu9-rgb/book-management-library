@@ -9,10 +9,9 @@ import { BookService } from '../book';
   standalone: true,
   imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './book-form.html',
-  styleUrls: ['./book-form.scss']
+  styleUrls: ['./book-form.scss'],
 })
 export class BookFormComponent {
-
   id: number | null = null;
   title: string = '';
   author: string = '';
@@ -35,7 +34,7 @@ export class BookFormComponent {
       this.isEdit = true;
 
       // ⭐ IMPORTANT: Subscribe to Observable
-      this.bookService.getBookById(this.id).subscribe(book => {
+      this.bookService.getBookById(this.id).subscribe((book) => {
         this.id = book.id;
         this.title = book.title;
         this.author = book.author;
@@ -47,43 +46,39 @@ export class BookFormComponent {
   }
 
   saveBook() {
-  if (!this.title || !this.author || !this.publishedDate) {
-    alert("Please fill all fields");
-    return;
+    if (!this.title || !this.author || !this.publishedDate) {
+      alert('Please fill all fields');
+      return;
+    }
+
+    if (this.isEdit) {
+      // UPDATE (PUT)
+      const updatedBook = {
+        id: this.id,
+        title: this.title,
+        author: this.author,
+        publishedDate: this.publishedDate,
+        price: this.price,
+        description: this.description,
+      };
+
+      this.bookService.updateBook(updatedBook).subscribe(() => {
+        this.router.navigate(['/']);
+      });
+    } else {
+      // ADD (POST) — NO ID HERE!
+      const newBook = {
+        id: this.id,
+        title: this.title,
+        author: this.author,
+        publishedDate: this.publishedDate,
+        price: this.price,
+        description: this.description,
+      };
+
+      this.bookService.addBook(newBook).subscribe(() => {
+        this.router.navigate(['/']);
+      });
+    }
   }
-
-  if (this.isEdit) {
-
-    // UPDATE (PUT)
-    const updatedBook = {
-      id: this.id,
-      title: this.title,
-      author: this.author,
-      publishedDate: this.publishedDate,
-      price: this.price,
-      description: this.description
-    };
-
-    this.bookService.updateBook(updatedBook).subscribe(() => {
-      this.router.navigate(['/']);
-    });
-
-  } else {
-
-    // ADD (POST) — NO ID HERE!
-    const newBook = {
-      id: this.id,
-      title: this.title,
-      author: this.author,
-      publishedDate: this.publishedDate,
-      price: this.price,
-      description: this.description
-    };
-
-    this.bookService.addBook(newBook).subscribe(() => {
-      this.router.navigate(['/']);
-    });
-  }
-}
-
 }

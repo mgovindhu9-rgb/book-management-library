@@ -1,0 +1,14 @@
+/* Global App Styling */
+:host {
+  display: block;
+  min-height: 100vh;
+  /* background-color removed to let body background show through */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+}
+
+/* Ensure the router outlet content takes full width */
+main {
+  width: 100%;
+}
+

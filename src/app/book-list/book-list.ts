@@ -9,34 +9,32 @@ import { BookItemComponent } from '../book-item/book-item';
   standalone: true,
   imports: [CommonModule, RouterModule, BookItemComponent],
   templateUrl: './book-list.html',
-  styleUrls: ['./book-list.scss']
+  styleUrls: ['./book-list.scss'],
 })
 export class BookListComponent {
-
   books: any[] = [];
   loading = true;
 
   constructor(private bookService: BookService, private router: Router) {}
 
-ngOnInit() {
-  this.loadBooks();
-}
+  ngOnInit() {
+    this.loadBooks();
+  }
 
-loadBooks() {
-  this.bookService.getBooks().subscribe(data => {
-    this.books = data;
-    this.loading = false;
-  });
-}
-
-deleteBook(id: number) {
-  if (confirm("Are you sure you want to delete this book?")) {
-    this.bookService.deleteBook(id).subscribe(() => {
-      this.loadBooks(); // reload after deletion
+  loadBooks() {
+    this.bookService.getBooks().subscribe((data) => {
+      this.books = data;
+      this.loading = false;
     });
   }
-}
 
+  deleteBook(id: number) {
+    if (confirm('Are you sure you want to delete this book?')) {
+      this.bookService.deleteBook(id).subscribe(() => {
+        this.loadBooks(); // reload after deletion
+      });
+    }
+  }
 
   handleViewBook(id: any) {
     this.router.navigate(['/details', id]);
@@ -46,10 +44,6 @@ deleteBook(id: number) {
     this.router.navigate(['/add']);
   }
   editBook(id: number) {
-  this.router.navigate(['/edit', id]);
+    this.router.navigate(['/edit', id]);
+  }
 }
-
-}
-
-
-

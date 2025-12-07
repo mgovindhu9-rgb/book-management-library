@@ -1,2 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  
+  /* Hide scrollbar completely but allow scrolling */
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* Chrome/Safari/Webkit */
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: url("./assets/images/background.png") no-repeat center center fixed; 
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+

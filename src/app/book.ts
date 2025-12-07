@@ -3,10 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BookService {
-
   private api = 'http://localhost:3000/books';
 
   constructor(private http: HttpClient) {}
@@ -21,13 +20,11 @@ export class BookService {
     return this.http.get<any>(`${this.api}/${id}`);
   }
 
-  
   addBook(book: any): Observable<any> {
-  return this.http.post<any>(this.api, book, {
-    headers: { 'Content-Type': 'application/json' }
-  });
-}
-
+    return this.http.post<any>(this.api, book, {
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
 
   // PUT update book
   updateBook(book: any): Observable<any> {
@@ -40,3 +37,4 @@ export class BookService {
   }
 }
 
+// **this part explain where to where connection why ?
