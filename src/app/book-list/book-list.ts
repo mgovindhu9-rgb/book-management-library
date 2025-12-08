@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { BookService } from '../book';
 import { CommonModule } from '@angular/common';
-import { BookItemComponent } from '../book-item/book-item';
 
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, BookItemComponent],
+  imports: [CommonModule, RouterModule],
   templateUrl: './book-list.html',
   styleUrls: ['./book-list.scss'],
 })

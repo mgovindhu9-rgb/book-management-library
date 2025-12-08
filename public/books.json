@@ -5,7 +5,7 @@
       "title": "Rich Dad Poor Dad",
       "author": "Robert T. Kiyosaki",
       "publishedDate": "1997-04-01",
-      "price": 349,
+      "price": 344,
       "description": "A bestselling personal finance classic that teaches how to build wealth through assets, financial literacy, and smart investing."
     },
     {
@@ -50,35 +50,19 @@
     },
     {
       "id": "8",
-      "title": "How to Win Friends and Influence People",
-      "author": "Dale Carnegie",
-      "publishedDate": "1936-10-01",
-      "price": 260,
-      "description": "A classic self-help book teaching communication, persuasion, and relationship-building skills."
-    },
-    {
-      "id": "9",
-      "title": "The Psychology of Money",
-      "author": "Morgan Housel",
-      "publishedDate": "2020-09-08",
-      "price": 380,
-      "description": "A book explaining how emotions, behavior, and mindset influence financial success more than logic."
-    },
-    {
-      "id": "0",
       "title": "Thinking, Fast and Slow",
       "author": "Daniel Kahneman",
       "publishedDate": "2025-06-04",
-      "price": 399,
+      "price": 499,
       "description": "Explains the two systems of thinking and how they shape our decisions."
     },
     {
-      "id": "0",
-      "title": "The Power of Habit",
-      "author": "Charles Duhigg",
-      "publishedDate": "1974-07-19",
-      "price": 299,
-      "description": "Shows how habits work and how they can be transformed for success."
+      "id": "6",
+      "title": "ytygb",
+      "author": "kjhgfds",
+      "publishedDate": "2023-02-15",
+      "price": 8776,
+      "description": "hnjlxhnj"
     }
   ]
 }
